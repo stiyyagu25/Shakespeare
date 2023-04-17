@@ -54,11 +54,11 @@ tab1, tab2, tab3 = st.tabs(['Word Cloud', 'Bar Chart', 'View Text'])
 with tab1:
         if image != " ":
             if remove_stopwords: 
-                cloud = WordCloud(background_color = "white", word_maxs = word_max, max_font_size=large_size, 
+                cloud = WordCloud(background_color = "white", max_words = word_max, max_font_size=large_size, 
                                   stopwords = stop_words, random_state=random_state)
             else:
                 cloud = WordCloud(background_color = "white", 
-                            word_maxs = word_max, 
+                           max_words = word_max, 
                             max_font_size=large_size, 
                             random_state=random_state)
             
